@@ -22,5 +22,11 @@ describe('Server Side', () => {
     expect(res.text).toEqual('Hello From the Other side');
     expect(res.status).toEqual(200);
   });
+
+  it('handle server valid routes', async () => {
+    const res = await req.get('/data');
+    expect(res.text).toEqual('the server is visible');
+    expect(res.status).toEqual(200);
+  });
 });
   

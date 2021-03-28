@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
   res.send('Hello From the Other side');
 });
 
+app.get('/data', (req, res) => {
+  res.send('the server is visible');
+});
+
 app.get('/error', (req, res) => {
   throw new Error('ERROR FROM server side :) ...');
 });
