@@ -19,7 +19,7 @@ app.get('/error', (req, res) => {
 
 function start(port) {
   app.listen(port, () => {
-    console.log(`Server is up on ${port}`);
+    console.log(`Listening on port ${port}`);
   });
 }
 
