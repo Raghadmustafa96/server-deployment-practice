@@ -29,4 +29,3 @@ describe('Server Side', () => {
     expect(res.status).toEqual(200);
   });
 });
-  
